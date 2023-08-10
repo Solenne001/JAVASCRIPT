@@ -133,20 +133,69 @@ let parite =(chif)=>{
 }
 console.log(chiffre); */
 
-let tableau = [{titre:"ty", annee: 2004}, {titre:"tu", annee: 2009}, {titre:"hi", annee: 2005}, {titre:"po", annee: 2002}]
+/* let tableau = [{titre:"ty", annee: 2004}, {titre:"tu", annee: 2009}, {titre:"hi", annee: 2005}, {titre:"po", annee: 2002}]
 /* for(let element of tableau){
     console.log(element.titre); */
   //affiche le plus petit année
- function serie(params) {
+/*  function serie(params) {
     let plusPetit =[0].annee;
     for(let element of params){
         if(plusPetit > element.annee){
-            plusPetit = element.annee;
+            plusPetit = element.a;
         }
     }
     console.log(plusPetit);
  }
  serie(tableau);
+  */
+
+ //créér une classe et son constructeur
+ class Personne{
+    constructor(n, p){
+     this.nom = n;
+     this.prenom = p;  
+    }
+    presentation(){
+        console.log(`je m'appelle ${this.nom} ${this.prenom}`);
+    }
+ }
+
+ class Professeur extends Personne{
+    constructor(nom, prenom, filiere){
+        super(nom, prenom)
+        this.filiere = filiere
+    }
+    frequente = true
+ }
+
+ let agbodjan = new Professeur("Agbodjan", "Eric", "D")
+ console.log(agbodjan);
+ let franklin = new Personne("Franklin", "Delano")
+ console.log(franklin);
+ let audrey = new Personne("audrey", "yawa")
+ console.log(audrey);
+
+/*  class Animaux{
+    constructor(nom){
+        this.name = nom
+    }
+    pres(){
+        console.log(`leurs nom ${this.name}`);
+    }
+ }
+ let chien = new Animaux("chouchou")
+ console.log(chien);
+ let chat = new Animaux("milou")
+ console.log(chat); */
+
+
+
+ /* let koffi = new Personne() //ajouter une persone
+ console.log(koffi);
+ let audrey = new Personne()
+ console.log(audrey); */
+
+ 
 
     
     
