@@ -175,11 +175,12 @@ while(nbr <6){
     }
 } */
 
-let number = Number(prompt("Quel valeur voulez vous utiliser"))
+/* let number = Number(prompt("Quel valeur voulez vous utiliser"))
 
  for(let i =0; i <13; i++){
     console.log(`${number} * ${i} =${number*1}`)
-} 
+}  */
+
 
 
 
